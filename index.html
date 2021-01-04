@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="resize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+  
+
+  <title>Editor</title>
+</head>
+<body>
+
+  <div class="show-div"><button class="show">SHOW</button></div>
+
+
+  <div class="wrapper">
+
+
+    <div class="wrapper-side">
+      <div class="sidebar">
+
+        <div class="text click-elem-side">Side Menu</div>
+  
+        <ul class="wrapper-ul">
+  
+          <li class="menu-element"> 
+            <div class="click-elem">
+            <span class="fas fas1 fa-caret-right"></span>
+            Elements
+            
+            </div> 
+      
+          </li>
+          <li class="menu-element"> 
+            <div class="el-text" >
+            <span class="fas fas2 fa-caret-right"></span>
+            Side and Position
+            
+            </div> 
+            <ul class="hidden-element hidden-element1">
+              <li class="hidden-el-text">Smthn snp</li>
+            </ul>
+          </li>
+          <li class="menu-element"> 
+            <div class="el-text">
+            <span class="fas fas3 fa-caret-right"></span>
+            Properties
+            
+            </div>
+            <ul class="hidden-element hidden-element2">
+              <li class="hidden-el-text">
+  
+                <div class="inp">
+                  
+                  <input type="file" name="inpFile" id="inpFile" value="Choose File">
+  
+                </div>
+                
+  
+                <div class="pickr-container">
+                <div class="color-picker"></div>
+              </div>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-element"> 
+            <div class="el-text" >
+            <span class="fas fas4 fa-caret-right"></span>
+            Actions
+            
+            </div>
+            <ul class="hidden-element hidden-element3">
+              <li class="hidden-el-text">
+                
+                <button class="remove-btn">Remove</button>
+  
+              </li>
+            </ul>
+          </li>
+  
+      
+        </ul>
+  
+      </div>
+    </div>
+
+    <div id = "cont" class="content hidden-element4" style="display: none;">
+      
+      <div class="content-block content-el" >Container</div>
+      <div class="content-btn content-el">Button</div>
+      <div class="content-img content-el">Image</div>
+      <div class="content-text content-el">Text</div>
+
+      
+
+    </div>
+
+    <div class="main-content">
+    
+      
+
+    </div>
+
+
+  </div>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/jquery/dist/resize.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>
